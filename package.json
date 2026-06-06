@@ -1,0 +1,17 @@
+{
+  "name": "la",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:inventory": "npm run dev --workspace=@la/inventory",
+    "dev:shop": "npm run dev --workspace=@la/shop",
+    "build": "npm run build --workspaces --if-present",
+    "build:inventory": "npm run build --workspace=@la/inventory",
+    "build:shop": "npm run build --workspace=@la/shop",
+    "lint": "npm run lint --workspaces --if-present"
+  }
+}
